@@ -1,0 +1,693 @@
+{
+  "mod_elements": [
+    {
+      "name": "ProjectRedo",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "project_redo",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GreatRabbitThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_rabbit_this_entity_kills_another_one",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/GreatRabbitThisEntityKillsAnotherOneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PuckGlintstone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puck_glintstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/puck_glintstone.json",
+          "src/main/java/net/mcreator/projectredo/item/PuckGlintstoneItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "GreatRabbitAttackControl",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_rabbit_attack_control",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/GreatRabbitAttackControlProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TaktOfHeroes",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "takt_of_heroes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/takt_of_heroes.json",
+          "src/main/java/net/mcreator/projectredo/item/TaktOfHeroesItem.java"
+        ]
+      },
+      "path": "~/MusicDisks"
+    },
+    {
+      "name": "GreatRabbitAnimated",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_rabbit_animated",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/entity/model/GreatRabbitAnimatedModel.java",
+          "src/main/java/net/mcreator/projectredo/client/renderer/GreatRabbitAnimatedRenderer.java",
+          "src/main/resources/assets/project_redo/models/item/great_rabbit_animated_spawn_egg.json",
+          "src/main/java/net/mcreator/projectredo/entity/GreatRabbitAnimatedEntity.java",
+          "src/main/resources/data/project_redo/forge/biome_modifier/great_rabbit_animated_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "RabbitIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rabbit_icon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/rabbit_icon.json",
+          "src/main/java/net/mcreator/projectredo/item/RabbitIconItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ARabbitThatWouldntEnd",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_rabbit_that_wouldnt_end",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/advancements/a_rabbit_that_wouldnt_end.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "CoverAdv1",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_adv_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/cover_adv_1.json",
+          "src/main/java/net/mcreator/projectredo/item/CoverAdv1Item.java"
+        ]
+      }
+    },
+    {
+      "name": "ProjectRedoAdv",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "project_redo_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/advancements/project_redo_adv.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Gospel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gospel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/item/GospelItem.java",
+          "src/main/resources/assets/project_redo/models/item/gospel.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ObtainedGospelAdv",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtained_gospel_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/advancements/obtained_gospel_adv.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Magic",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/world/inventory/MagicMenu.java",
+          "src/main/java/net/mcreator/projectredo/client/gui/MagicScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "MagicGuiKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_gui_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/network/MagicGuiKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "IceParticle1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_particle_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/client/particle/IceParticle1Particle.java",
+          "src/main/resources/assets/project_redo/particles/ice_particle_1.json"
+        ]
+      }
+    },
+    {
+      "name": "IceCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/ice_crystal.json",
+          "src/main/java/net/mcreator/projectredo/item/IceCrystalItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IceCrystal1",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_crystal_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/entity/IceCrystal1Entity.java"
+        ]
+      }
+    },
+    {
+      "name": "RondoOfLoveAndDarkness",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rondo_of_love_and_darkness",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/rondo_of_love_and_darkness.json",
+          "src/main/java/net/mcreator/projectredo/item/RondoOfLoveAndDarknessItem.java"
+        ]
+      },
+      "path": "~/MusicDisks"
+    },
+    {
+      "name": "RequiemOfSilence",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "requiem_of_silence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/item/RequiemOfSilenceItem.java",
+          "src/main/resources/assets/project_redo/models/item/requiem_of_silence.json"
+        ]
+      },
+      "path": "~/MusicDisks"
+    },
+    {
+      "name": "WitchCultDagger",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witch_cult_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/item/WitchCultDaggerItem.java",
+          "src/main/resources/assets/project_redo/models/item/witch_cult_dagger.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "StraightBet",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "straight_bet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/straight_bet.json",
+          "src/main/java/net/mcreator/projectredo/item/StraightBetItem.java"
+        ]
+      },
+      "path": "~/MusicDisks"
+    },
+    {
+      "name": "TheaterD",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "theater_d",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/item/TheaterDItem.java",
+          "src/main/resources/assets/project_redo/models/item/theater_d.json"
+        ]
+      },
+      "path": "~/MusicDisks"
+    },
+    {
+      "name": "Puck",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puck",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/puck_spawn_egg.json",
+          "src/main/java/net/mcreator/projectredo/entity/PuckEntity.java",
+          "src/main/java/net/mcreator/projectredo/client/renderer/PuckRenderer.java",
+          "src/main/java/net/mcreator/projectredo/entity/model/PuckModel.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "ReZero",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "re_zero",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/world/dimension/ReZeroDimension.java",
+          "src/main/resources/data/project_redo/dimension_type/re_zero.json",
+          "src/main/resources/data/project_redo/dimension/re_zero.json"
+        ]
+      }
+    },
+    {
+      "name": "CastleOfDreams",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_of_dreams",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/world/dimension/CastleOfDreamsDimension.java",
+          "src/main/resources/data/project_redo/dimension/castle_of_dreams.json",
+          "src/main/resources/data/project_redo/dimension_type/castle_of_dreams.json"
+        ]
+      },
+      "path": "~/witchesrealm"
+    },
+    {
+      "name": "WitchsTeaParty",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witchs_tea_party",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/worldgen/biome/witchs_tea_party.json"
+        ]
+      },
+      "path": "~/witchesrealm"
+    },
+    {
+      "name": "EchidnaButterFly1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echidna_butter_fly_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/client/particle/EchidnaButterFly1Particle.java",
+          "src/main/resources/assets/project_redo/particles/echidna_butter_fly_1.json"
+        ]
+      },
+      "path": "~/witchesrealm"
+    },
+    {
+      "name": "CastelOfDreamsWorldGen",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "castel_of_dreams_world_gen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/CastelOfDreamsWorldGen.java"
+        ]
+      }
+    },
+    {
+      "name": "FlatWorldGenWTP",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "flat_world_gen_wtp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/FlatWorldGenWTP.java"
+        ]
+      }
+    },
+    {
+      "name": "ReZeroPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "re_zero_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/ReZeroPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CastleOfDreamsPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_of_dreams_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/CastleOfDreamsPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/witchesrealm"
+    },
+    {
+      "name": "CastleOfDreamsPlayerLeavesDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_of_dreams_player_leaves_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/CastleOfDreamsPlayerLeavesDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/witchesrealm"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "taktofheroesmusic",
+      "files": [
+        "ying_xiong_notakuto_-jue_xing_-"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "rondoofloveanddarkness",
+      "files": [
+        "rezero_ost_rondo_of_love_and_darkness"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "requiemofsilence",
+      "files": [
+        "requiem_of_silence"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "straightbet",
+      "files": [
+        "straightbet"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "theaterd",
+      "files": [
+        "theaterd"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "touchingyou",
+      "files": [
+        "touchingyou"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "memoriesoftimeandsky",
+      "files": [
+        "memories_of_time_and_sky"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "fantasylied",
+      "files": [
+        "fantasylied"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "echidnasteaparty",
+      "files": [
+        "echidnas_tea_party"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "appa",
+      "files": [
+        "appa"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "returnbydeath",
+      "files": [
+        "returnbydeath"
+      ],
+      "category": "master",
+      "subtitle": "AHHHH"
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:WitchCultDagger"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:TheaterD",
+      "~CUSTOM:StraightBet",
+      "~CUSTOM:RequiemOfSilence",
+      "~CUSTOM:RondoOfLoveAndDarkness",
+      "~CUSTOM:TaktOfHeroes"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.BEDROCK",
+      "~Blocks.MOSS_BLOCK",
+      "~Blocks.DIRT#0",
+      "~Blocks.STONE#0"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:ProjectRedo": [
+      "Gospel",
+      "TaktOfHeroes",
+      "RondoOfLoveAndDarkness",
+      "RequiemOfSilence",
+      "StraightBet",
+      "TheaterD",
+      "GreatRabbitAnimated",
+      "WitchCultDagger",
+      "PuckGlintstone"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.project_redo.straight_bet": "Music Disk",
+      "item.project_redo.theater_d.desc": "Myth \u0026 Roid - Theater D",
+      "subtitles.requiemofsilence": "",
+      "item.project_redo.puck_glintstone": "Puck Glintstone",
+      "item.project_redo.rabbit_icon": "Rabbit Icon",
+      "subtitles.callofthewitch": "oooeeeoooo",
+      "subtitles.straightbet": "",
+      "advancements.obtained_gospel_adv.descr": "You\u0027ve obtained the Witch Cult\u0027s gospel... but what are you going to do with that?",
+      "item.project_redo.rondo_of_love_and_darkness.desc": "ReZero Ost - Rondo Of Love And Darkness",
+      "subtitles.taktofheroesmusic": "",
+      "item.project_redo.ice_crystal": "Ice Crystal",
+      "subtitles.touchingyou": "",
+      "entity.project_redo.great_rabbit_animated": "The Great Rabbit",
+      "item.project_redo.cover_adv_1": "Cover Adv 1",
+      "item.project_redo.requiem_of_silence": "Music Disk",
+      "item.project_redo.witch_cult_dagger": "Witch Cult Dagger",
+      "subtitles.echidnasteaparty": "",
+      "item.project_redo.takt_of_heroes": "Music Disk",
+      "item_group.project_redo.project_redo": "Project Redo",
+      "subtitles.theaterd": "",
+      "biome.project_redo.witchs_tea_party": "Witchs Tea Party",
+      "item.project_redo.takt_of_heroes.desc": "Re:Zero Ost -Takt Of Heroes",
+      "advancements.project_redo_adv.title": "Project Redo",
+      "subtitles.appa": "",
+      "item.project_redo.requiem_of_silence.desc": "Re:Zero Ost - Requiem Of Silence",
+      "item.project_redo.straight_bet.desc": "Myth \u0026 Roid - Straight Bet",
+      "advancements.project_redo_adv.descr": "Starting Minecraft From Zero",
+      "item.project_redo.rondo_of_love_and_darkness": "Music Disk",
+      "item.project_redo.great_rabbit_animated_spawn_egg": "The Great Rabbit Spawn Egg",
+      "key.project_redo.magic_gui_key": "Magic Gui Key",
+      "advancements.obtained_gospel_adv.title": "Proof of LOVE",
+      "subtitles.returnbydeath": "AHHHH",
+      "entity.project_redo.puck": "Puck",
+      "subtitles.memoriesoftimeandsky": "",
+      "item.project_redo.theater_d": "Music",
+      "subtitles.rondoofloveanddarkness": "",
+      "advancements.a_rabbit_that_wouldnt_end.title": "A Rabbit That Wouldn\u0027t End",
+      "item.project_redo.puck_spawn_egg": "Puck Spawn Egg",
+      "subtitles.fantasylied": "",
+      "item.project_redo.gospel": "Gospel",
+      "advancements.a_rabbit_that_wouldnt_end.descr": "Encounter the Great Rabbit"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "MusicDisks",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "witchesrealm",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "project_redo",
+    "modName": "Project Redo",
+    "version": "1.0.0",
+    "author": "Bennett, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.projectredo"
+  },
+  "mcreatorVersion": 202400342716
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "project_redo:cover_adv_1"
+    },
+    "title": {
+      "translate": "advancements.project_redo_adv.title"
+    },
+    "description": {
+      "translate": "advancements.project_redo_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "project_redo_adv_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "project_redo:re_zero"
+      }
+    }
+  }
+}

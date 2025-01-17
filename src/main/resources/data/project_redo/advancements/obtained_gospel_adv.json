@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "project_redo:gospel"
+    },
+    "title": {
+      "translate": "advancements.obtained_gospel_adv.title"
+    },
+    "description": {
+      "translate": "advancements.obtained_gospel_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtained_gospel_adv_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "project_redo:gospel"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "project_redo:project_redo_adv"
+}

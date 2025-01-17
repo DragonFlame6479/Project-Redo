@@ -1,0 +1,26 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disk",
+    "rarity": "RARE",
+    "texture": "musicdisk1",
+    "description": "Re:Zero Ost -Takt Of Heroes",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ProjectRedo"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:taktofheroesmusic"
+    },
+    "lengthInTicks": 3600,
+    "analogOutput": 0
+  }
+}

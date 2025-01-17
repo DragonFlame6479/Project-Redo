@@ -1,0 +1,91 @@
+{
+  "taktofheroesmusic": {
+    "sounds": [
+      {
+        "name": "project_redo:ying_xiong_notakuto_-jue_xing_-",
+        "stream": true
+      }
+    ]
+  },
+  "rondoofloveanddarkness": {
+    "sounds": [
+      {
+        "name": "project_redo:rezero_ost_rondo_of_love_and_darkness",
+        "stream": true
+      }
+    ]
+  },
+  "requiemofsilence": {
+    "sounds": [
+      {
+        "name": "project_redo:requiem_of_silence",
+        "stream": true
+      }
+    ]
+  },
+  "straightbet": {
+    "sounds": [
+      {
+        "name": "project_redo:straightbet",
+        "stream": true
+      }
+    ]
+  },
+  "theaterd": {
+    "sounds": [
+      {
+        "name": "project_redo:theaterd",
+        "stream": true
+      }
+    ]
+  },
+  "touchingyou": {
+    "sounds": [
+      {
+        "name": "project_redo:touchingyou",
+        "stream": true
+      }
+    ]
+  },
+  "memoriesoftimeandsky": {
+    "sounds": [
+      {
+        "name": "project_redo:memories_of_time_and_sky",
+        "stream": false
+      }
+    ]
+  },
+  "fantasylied": {
+    "sounds": [
+      {
+        "name": "project_redo:fantasylied",
+        "stream": true
+      }
+    ]
+  },
+  "echidnasteaparty": {
+    "sounds": [
+      {
+        "name": "project_redo:echidnas_tea_party",
+        "stream": true
+      }
+    ]
+  },
+  "appa": {
+    "sounds": [
+      {
+        "name": "project_redo:appa",
+        "stream": true
+      }
+    ]
+  },
+  "returnbydeath": {
+    "subtitle": "subtitles.returnbydeath",
+    "sounds": [
+      {
+        "name": "project_redo:returnbydeath",
+        "stream": false
+      }
+    ]
+  }
+}

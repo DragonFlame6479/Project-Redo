@@ -1,0 +1,26 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disk",
+    "rarity": "RARE",
+    "texture": "musicdisk4",
+    "description": "Myth & Roid - Straight Bet",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ProjectRedo"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:straightbet"
+    },
+    "lengthInTicks": 5000,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disk",
+    "rarity": "RARE",
+    "texture": "musicdisk2",
+    "description": "ReZero Ost - Rondo Of Love And Darkness",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ProjectRedo"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:rondoofloveanddarkness"
+    },
+    "lengthInTicks": 4600,
+    "analogOutput": 0
+  }
+}

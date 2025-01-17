@@ -1,0 +1,23 @@
+{
+  "_fv": 69,
+  "_type": "particle",
+  "definition": {
+    "texture": "icecrystal1",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.30000000000000004,
+    "height": 0.30000000000000004,
+    "scale": {
+      "fixedValue": 1.0
+    },
+    "speedFactor": 1.0,
+    "gravity": 1.0,
+    "maxAge": 45,
+    "maxAgeDiff": 40,
+    "angularVelocity": 0.5,
+    "angularAcceleration": 0.01,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

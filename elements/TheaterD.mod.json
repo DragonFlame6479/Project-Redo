@@ -1,0 +1,26 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music",
+    "rarity": "RARE",
+    "texture": "musicdisktemplate5",
+    "description": "Myth & Roid - Theater D",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ProjectRedo"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:theaterd"
+    },
+    "lengthInTicks": 4440,
+    "analogOutput": 0
+  }
+}

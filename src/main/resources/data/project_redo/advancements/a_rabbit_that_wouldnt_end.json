@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "project_redo:rabbit_icon"
+    },
+    "title": {
+      "translate": "advancements.a_rabbit_that_wouldnt_end.title"
+    },
+    "description": {
+      "translate": "advancements.a_rabbit_that_wouldnt_end.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "a_rabbit_that_wouldnt_end_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "taken": {
+            "min": 0,
+            "max": 100
+          },
+          "source_entity": {
+            "type": "project_redo:great_rabbit_animated"
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "parent": "project_redo:project_redo_adv"
+}

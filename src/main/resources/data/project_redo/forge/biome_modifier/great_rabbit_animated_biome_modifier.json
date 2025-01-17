@@ -1,0 +1,15 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "ice_spikes",
+    "snowy_taiga",
+    "snowy_plains",
+    "snowy_slopes"
+  ],
+  "spawners": {
+    "type": "project_redo:great_rabbit_animated",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 20
+  }
+}
