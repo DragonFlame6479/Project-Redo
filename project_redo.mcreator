@@ -338,7 +338,8 @@
           "src/main/resources/data/project_redo/dimension_type/re_zero.json",
           "src/main/resources/data/project_redo/dimension/re_zero.json"
         ]
-      }
+      },
+      "path": "~/ReZeroBiomes"
     },
     {
       "name": "CastleOfDreams",
@@ -535,6 +536,21 @@
           "src/main/java/net/mcreator/projectredo/item/BORGERItem.java"
         ]
       }
+    },
+    {
+      "name": "Forest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/worldgen/configured_feature/forest_tree.json",
+          "src/main/resources/data/project_redo/worldgen/placed_feature/forest_tree.json",
+          "src/main/resources/data/project_redo/worldgen/biome/forest.json"
+        ]
+      },
+      "path": "~/ReZeroBiomes"
     }
   ],
   "variable_elements": [],
@@ -640,9 +656,10 @@
       "~CUSTOM:TaktOfHeroes"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS",
       "~Blocks.BEDROCK",
       "~Blocks.MOSS_BLOCK",
-      "~Blocks.DIRT#0",
       "~Blocks.STONE#0"
     ]
   },
@@ -662,8 +679,10 @@
   },
   "language_map": {
     "en_us": {
+      "item.project_redo.borger": "BORGER",
       "item.project_redo.straight_bet": "Music Disk",
       "item.project_redo.theater_d.desc": "Myth \u0026 Roid - Theater D",
+      "biome.project_redo.forest": "Forest",
       "subtitles.requiemofsilence": "",
       "item.project_redo.puck_glintstone": "Puck Glintstone",
       "item.project_redo.rabbit_icon": "Rabbit Icon",
@@ -693,6 +712,7 @@
       "item.project_redo.rondo_of_love_and_darkness": "Music Disk",
       "item.project_redo.great_rabbit_animated_spawn_egg": "The Great Rabbit Spawn Egg",
       "key.project_redo.magic_gui_key": "Magic Gui Key",
+      "item.project_redo.just_some_item": "Just Some Item",
       "advancements.obtained_gospel_adv.title": "Proof of LOVE",
       "subtitles.returnbydeath": "AHHHH",
       "entity.project_redo.puck": "Puck",
