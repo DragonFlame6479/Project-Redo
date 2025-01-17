@@ -477,6 +477,38 @@
         ]
       },
       "path": "~/witchesrealm"
+    },
+    {
+      "name": "WitchsWill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "witchs_will",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/item/WitchsWillItem.java",
+          "src/main/resources/assets/project_redo/models/item/witchs_will.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "IsekaiCode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "isekai_code",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/IsekaiCodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -598,7 +630,8 @@
       "TheaterD",
       "GreatRabbitAnimated",
       "WitchCultDagger",
-      "PuckGlintstone"
+      "PuckGlintstone",
+      "WitchsWill"
     ]
   },
   "language_map": {
@@ -615,6 +648,7 @@
       "subtitles.taktofheroesmusic": "",
       "item.project_redo.ice_crystal": "Ice Crystal",
       "subtitles.touchingyou": "",
+      "item.project_redo.witchs_will": "Witch\u0027s Will",
       "entity.project_redo.great_rabbit_animated": "The Great Rabbit",
       "item.project_redo.cover_adv_1": "Cover Adv 1",
       "item.project_redo.requiem_of_silence": "Music Disk",
@@ -667,6 +701,10 @@
       },
       {
         "name": "witchesrealm",
+        "children": []
+      },
+      {
+        "name": "ReZeroBiomes",
         "children": []
       }
     ]

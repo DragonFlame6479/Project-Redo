@@ -11,6 +11,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.projectredo.item.WitchsWillItem;
 import net.mcreator.projectredo.item.WitchCultDaggerItem;
 import net.mcreator.projectredo.item.TheaterDItem;
 import net.mcreator.projectredo.item.TaktOfHeroesItem;
@@ -39,6 +40,7 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> STRAIGHT_BET = REGISTRY.register("straight_bet", () -> new StraightBetItem());
 	public static final RegistryObject<Item> THEATER_D = REGISTRY.register("theater_d", () -> new TheaterDItem());
 	public static final RegistryObject<Item> PUCK_SPAWN_EGG = REGISTRY.register("puck_spawn_egg", () -> new ForgeSpawnEggItem(ProjectRedoModEntities.PUCK, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> WITCHS_WILL = REGISTRY.register("witchs_will", () -> new WitchsWillItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

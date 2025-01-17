@@ -32,6 +32,7 @@ public class ProjectRedoModTabs {
 				tabData.accept(ProjectRedoModItems.GREAT_RABBIT_ANIMATED_SPAWN_EGG.get());
 				tabData.accept(ProjectRedoModItems.WITCH_CULT_DAGGER.get());
 				tabData.accept(ProjectRedoModItems.PUCK_GLINTSTONE.get());
+				tabData.accept(ProjectRedoModItems.WITCHS_WILL.get());
 			})
 
 					.build());
