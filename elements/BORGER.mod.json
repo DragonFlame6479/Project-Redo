@@ -1,0 +1,53 @@
+{
+  "_fv": 69,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "borger",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "BORGER",
+    "rarity": "COMMON",
+    "creativeTabs": [],
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:IceCrystal1"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": true,
+    "nutritionalValue": 500,
+    "saturation": 69.0,
+    "eatResultItem": {
+      "value": "Blocks.DIAMOND_BLOCK"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "none"
+  }
+}

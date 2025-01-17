@@ -509,6 +509,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "BORGER",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "borger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/borger.json",
+          "src/main/java/net/mcreator/projectredo/item/BORGERItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -636,6 +649,7 @@
   },
   "language_map": {
     "en_us": {
+      "item.project_redo.borger": "BORGER",
       "item.project_redo.straight_bet": "Music Disk",
       "item.project_redo.theater_d.desc": "Myth \u0026 Roid - Theater D",
       "subtitles.requiemofsilence": "",
