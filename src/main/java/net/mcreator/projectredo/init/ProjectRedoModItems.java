@@ -24,6 +24,7 @@ import net.mcreator.projectredo.item.JustSomeItemItem;
 import net.mcreator.projectredo.item.IceCrystalItem;
 import net.mcreator.projectredo.item.GospelItem;
 import net.mcreator.projectredo.item.CoverAdv1Item;
+import net.mcreator.projectredo.item.BORGERItem;
 import net.mcreator.projectredo.ProjectRedoMod;
 
 public class ProjectRedoModItems {
@@ -43,6 +44,7 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> PUCK_SPAWN_EGG = REGISTRY.register("puck_spawn_egg", () -> new ForgeSpawnEggItem(ProjectRedoModEntities.PUCK, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> WITCHS_WILL = REGISTRY.register("witchs_will", () -> new WitchsWillItem());
 	public static final RegistryObject<Item> JUST_SOME_ITEM = REGISTRY.register("just_some_item", () -> new JustSomeItemItem());
+	public static final RegistryObject<Item> BORGER = REGISTRY.register("borger", () -> new BORGERItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

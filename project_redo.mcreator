@@ -522,6 +522,19 @@
           "src/main/resources/assets/project_redo/models/item/just_some_item.json"
         ]
       }
+    },
+    {
+      "name": "BORGER",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "borger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/borger.json",
+          "src/main/java/net/mcreator/projectredo/item/BORGERItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -680,7 +693,6 @@
       "item.project_redo.rondo_of_love_and_darkness": "Music Disk",
       "item.project_redo.great_rabbit_animated_spawn_egg": "The Great Rabbit Spawn Egg",
       "key.project_redo.magic_gui_key": "Magic Gui Key",
-      "item.project_redo.just_some_item": "Just Some Item",
       "advancements.obtained_gospel_adv.title": "Proof of LOVE",
       "subtitles.returnbydeath": "AHHHH",
       "entity.project_redo.puck": "Puck",
@@ -698,19 +710,11 @@
     "name": "~",
     "children": [
       {
-        "name": "MusicDisks",
-        "children": []
-      },
-      {
-        "name": "Entities",
-        "children": []
-      },
-      {
         "name": "Items",
         "children": []
       },
       {
-        "name": "Advancements",
+        "name": "ReZeroBiomes",
         "children": []
       },
       {
@@ -718,7 +722,15 @@
         "children": []
       },
       {
-        "name": "ReZeroBiomes",
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "MusicDisks",
         "children": []
       }
     ]
