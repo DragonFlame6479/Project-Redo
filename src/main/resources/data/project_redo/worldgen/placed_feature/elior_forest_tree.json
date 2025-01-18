@@ -1,9 +1,9 @@
 {
-  "feature": "project_redo:forest_tree",
+  "feature": "project_redo:elior_forest_tree",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 10
+      "count": 9
     },
     {
       "type": "minecraft:in_square"

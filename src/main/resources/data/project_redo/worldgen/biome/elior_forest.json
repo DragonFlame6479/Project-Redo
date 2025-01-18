@@ -1,16 +1,16 @@
 {
   "has_precipitation": true,
-  "temperature": 0.5,
+  "temperature": 0,
   "downfall": 0.5,
   "effects": {
     "music": {
-      "sound": "project_redo:fantasylied",
+      "sound": "project_redo:touchingyou",
       "min_delay": 12000,
       "max_delay": 24000,
       "replace_current_music": true
     },
-    "foliage_color": -15709173,
-    "grass_color": -15247087,
+    "foliage_color": 10387789,
+    "grass_color": 9470285,
     "sky_color": 7972607,
     "fog_color": 12638463,
     "water_color": 4159204,
@@ -39,9 +39,7 @@
     [
       "minecraft:lake_lava_underground"
     ],
-    [
-      "minecraft:forest_rock"
-    ],
+    [],
     [],
     [],
     [],
@@ -66,9 +64,11 @@
     [],
     [],
     [
-      "project_redo:forest_tree",
-      "minecraft:patch_grass_forest"
+      "project_redo:elior_forest_tree",
+      "minecraft:patch_dead_bush_2"
     ],
-    []
+    [
+      "minecraft:freeze_top_layer"
+    ]
   ]
 }

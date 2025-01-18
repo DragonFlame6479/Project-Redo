@@ -5,6 +5,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:Forest"
+      },
+      {
+        "value": "CUSTOM:EliorForest"
       }
     ],
     "worldGenType": "Normal world gen",

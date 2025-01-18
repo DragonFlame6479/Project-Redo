@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "biome",
   "definition": {
-    "name": "Forest",
+    "name": "Elior Forest",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -12,14 +12,6 @@
     "underwaterBlock": {
       "value": "Blocks.GRAVEL"
     },
-    "grassColor": {
-      "value": -15247087,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -15709173,
-      "falpha": 0.0
-    },
     "ambientSound": {
       "value": ""
     },
@@ -27,7 +19,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:fantasylied"
+      "value": "CUSTOM:touchingyou"
     },
     "moodSound": {
       "value": ""
@@ -39,13 +31,13 @@
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 0.0,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.5,
-      "max": 0.5
+      "min": -1.0,
+      "max": -0.5
     },
     "genHumidity": {
       "min": -0.5,
@@ -63,15 +55,15 @@
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 10,
-    "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 3,
+    "treesPerChunk": 9,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 5,
     "treeStem": {
-      "value": "Blocks.LOG#0"
+      "value": "Blocks.SPRUCE_WOOD"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES#0"
+      "value": "Blocks.AIR"
     },
     "treeVines": {
       "value": ""
@@ -82,8 +74,8 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "TaigaRocks",
-      "ForestGrass"
+      "FrozenTopLayer",
+      "DeadBushes"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

@@ -551,6 +551,21 @@
         ]
       },
       "path": "~/ReZeroBiomes"
+    },
+    {
+      "name": "EliorForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elior_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/worldgen/placed_feature/elior_forest_tree.json",
+          "src/main/resources/data/project_redo/worldgen/biome/elior_forest.json",
+          "src/main/resources/data/project_redo/worldgen/configured_feature/elior_forest_tree.json"
+        ]
+      },
+      "path": "~/ReZeroBiomes"
     }
   ],
   "variable_elements": [],
@@ -720,6 +735,7 @@
       "item.project_redo.theater_d": "Music",
       "subtitles.rondoofloveanddarkness": "",
       "advancements.a_rabbit_that_wouldnt_end.title": "A Rabbit That Wouldn\u0027t End",
+      "biome.project_redo.elior_forest": "Elior Forest",
       "item.project_redo.puck_spawn_egg": "Puck Spawn Egg",
       "subtitles.fantasylied": "",
       "item.project_redo.gospel": "Gospel",
