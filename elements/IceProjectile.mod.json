@@ -5,17 +5,20 @@
     "projectileItem": {
       "value": "CUSTOM:PuckGlintstone"
     },
-    "showParticles": false,
+    "showParticles": true,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "block.glass.break"
     },
     "igniteFire": false,
-    "power": 1.0,
+    "power": 1.5,
     "damage": 5.0,
-    "knockback": 5,
+    "knockback": 1,
     "entityModel": "Default",
     "customModelTexture": "",
     "modelWidth": 0.5,
-    "modelHeight": 0.5
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "IceProjectileProjectileHitsBlock"
+    }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Frost",
+    "icon": "frosttexture1",
+    "color": {
+      "value": -10027009,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "onStarted": {
+      "name": "FrostEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "FrostOnEffectActiveTick"
+    }
+  }
+}

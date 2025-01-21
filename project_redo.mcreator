@@ -216,31 +216,6 @@
       }
     },
     {
-      "name": "IceCrystal",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_crystal",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/project_redo/models/item/ice_crystal.json",
-          "src/main/java/net/mcreator/projectredo/item/IceCrystalItem.java"
-        ]
-      }
-    },
-    {
-      "name": "IceCrystal1",
-      "type": "projectile",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_crystal_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/projectredo/entity/IceCrystal1Entity.java"
-        ]
-      }
-    },
-    {
       "name": "RondoOfLoveAndDarkness",
       "type": "musicdisc",
       "compiles": true,
@@ -566,6 +541,101 @@
         ]
       },
       "path": "~/ReZeroBiomes"
+    },
+    {
+      "name": "IceProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/IceProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/IceProjectile"
+    },
+    {
+      "name": "Frost",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/potion/FrostMobEffect.java"
+        ]
+      },
+      "path": "~/IceProjectile"
+    },
+    {
+      "name": "FrostEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/FrostEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/IceProjectile"
+    },
+    {
+      "name": "FrostOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/FrostOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/IceProjectile"
+    },
+    {
+      "name": "IceProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/entity/IceProjectileEntity.java"
+        ]
+      },
+      "path": "~/IceProjectile"
     }
   ],
   "variable_elements": [],
@@ -689,7 +759,8 @@
       "GreatRabbitAnimated",
       "WitchCultDagger",
       "PuckGlintstone",
-      "WitchsWill"
+      "WitchsWill",
+      "Puck"
     ]
   },
   "language_map": {
@@ -697,6 +768,7 @@
       "item.project_redo.borger": "BORGER",
       "item.project_redo.straight_bet": "Music Disk",
       "item.project_redo.theater_d.desc": "Myth \u0026 Roid - Theater D",
+      "effect.project_redo.frost": "Frost",
       "biome.project_redo.forest": "Forest",
       "subtitles.requiemofsilence": "",
       "item.project_redo.puck_glintstone": "Puck Glintstone",
@@ -706,7 +778,6 @@
       "advancements.obtained_gospel_adv.descr": "You\u0027ve obtained the Witch Cult\u0027s gospel... but what are you going to do with that?",
       "item.project_redo.rondo_of_love_and_darkness.desc": "ReZero Ost - Rondo Of Love And Darkness",
       "subtitles.taktofheroesmusic": "",
-      "item.project_redo.ice_crystal": "Ice Crystal",
       "subtitles.touchingyou": "",
       "item.project_redo.witchs_will": "Witch\u0027s Will",
       "entity.project_redo.great_rabbit_animated": "The Great Rabbit",
@@ -767,6 +838,10 @@
       },
       {
         "name": "MusicDisks",
+        "children": []
+      },
+      {
+        "name": "IceProjectile",
         "children": []
       }
     ]

@@ -17,7 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.projectredo.entity.PuckEntity;
-import net.mcreator.projectredo.entity.IceCrystal1Entity;
+import net.mcreator.projectredo.entity.IceProjectileEntity;
 import net.mcreator.projectredo.entity.GreatRabbitAnimatedEntity;
 import net.mcreator.projectredo.ProjectRedoMod;
 
@@ -28,12 +28,10 @@ public class ProjectRedoModEntities {
 			EntityType.Builder.<GreatRabbitAnimatedEntity>of(GreatRabbitAnimatedEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(GreatRabbitAnimatedEntity::new)
 
 					.sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<IceCrystal1Entity>> ICE_CRYSTAL_1 = register("ice_crystal_1",
-			EntityType.Builder.<IceCrystal1Entity>of(IceCrystal1Entity::new, MobCategory.MISC).setCustomClientFactory(IceCrystal1Entity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PuckEntity>> PUCK = register("puck",
-			EntityType.Builder.<PuckEntity>of(PuckEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuckEntity::new)
-
-					.sized(0.4f, 0.4f));
+			EntityType.Builder.<PuckEntity>of(PuckEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuckEntity::new).fireImmune().sized(0.4f, 0.4f));
+	public static final RegistryObject<EntityType<IceProjectileEntity>> ICE_PROJECTILE = register("ice_projectile",
+			EntityType.Builder.<IceProjectileEntity>of(IceProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(IceProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

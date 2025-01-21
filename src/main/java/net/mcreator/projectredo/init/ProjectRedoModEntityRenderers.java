@@ -19,7 +19,7 @@ public class ProjectRedoModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(ProjectRedoModEntities.GREAT_RABBIT_ANIMATED.get(), GreatRabbitAnimatedRenderer::new);
-		event.registerEntityRenderer(ProjectRedoModEntities.ICE_CRYSTAL_1.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ProjectRedoModEntities.PUCK.get(), PuckRenderer::new);
+		event.registerEntityRenderer(ProjectRedoModEntities.ICE_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

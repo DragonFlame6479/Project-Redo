@@ -43,7 +43,7 @@
     "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
-      "value": "CUSTOM:IceCrystal1"
+      "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
