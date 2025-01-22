@@ -632,7 +632,46 @@
       "registry_name": "ice_projectile",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/projectredo/client/renderer/IceProjectileRenderer.java",
           "src/main/java/net/mcreator/projectredo/entity/IceProjectileEntity.java"
+        ]
+      },
+      "path": "~/IceProjectile"
+    },
+    {
+      "name": "IceProjectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_projectile_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/IceProjectileProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/IceProjectile"
+    },
+    {
+      "name": "IceProjectileProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_projectile_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/IceProjectileProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
       "path": "~/IceProjectile"

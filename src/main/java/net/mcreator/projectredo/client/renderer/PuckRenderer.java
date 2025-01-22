@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class PuckRenderer extends GeoEntityRenderer<PuckEntity> {
 	public PuckRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new PuckModel());
-		this.shadowRadius = 0.4f;
+		this.shadowRadius = 1f;
 	}
 
 	@Override

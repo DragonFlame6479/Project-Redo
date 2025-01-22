@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "icecrystal1"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -23,6 +23,7 @@ import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -109,7 +110,8 @@ public class PuckEntity extends Monster implements RangedAttackMob, GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8, 20) {
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Mob.class, false, false));
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = PuckEntity.this.getRandom();
@@ -119,10 +121,49 @@ public class PuckEntity extends Monster implements RangedAttackMob, GeoEntity {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(6, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new PuckEntity.RangedAttackGoal(this, 1.25, 20, 10f) {
+		this.goalSelector.addGoal(6, new Goal() {
+			{
+				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
+			}
+
+			public boolean canUse() {
+				if (PuckEntity.this.getTarget() != null && !PuckEntity.this.getMoveControl().hasWanted()) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				return PuckEntity.this.getMoveControl().hasWanted() && PuckEntity.this.getTarget() != null && PuckEntity.this.getTarget().isAlive();
+			}
+
+			@Override
+			public void start() {
+				LivingEntity livingentity = PuckEntity.this.getTarget();
+				Vec3 vec3d = livingentity.getEyePosition(1);
+				PuckEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
+			}
+
+			@Override
+			public void tick() {
+				LivingEntity livingentity = PuckEntity.this.getTarget();
+				if (PuckEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
+					PuckEntity.this.doHurtTarget(livingentity);
+				} else {
+					double d0 = PuckEntity.this.distanceToSqr(livingentity);
+					if (d0 < 16) {
+						Vec3 vec3d = livingentity.getEyePosition(1);
+						PuckEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
+					}
+				}
+			}
+		});
+		this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(9, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new PuckEntity.RangedAttackGoal(this, 1.25, 1, 64f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -224,6 +265,11 @@ public class PuckEntity extends Monster implements RangedAttackMob, GeoEntity {
 	}
 
 	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 0.2;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
@@ -309,12 +355,12 @@ public class PuckEntity extends Monster implements RangedAttackMob, GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 2);
+		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
+		builder = builder.add(Attributes.FLYING_SPEED, 2);
 		return builder;
 	}
 
@@ -323,11 +369,29 @@ public class PuckEntity extends Monster implements RangedAttackMob, GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("Walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("walk"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("Idle"));
 		}
 		return PlayState.STOP;
+	}
+
+	private PlayState attackingPredicate(AnimationState event) {
+		double d1 = this.getX() - this.xOld;
+		double d0 = this.getZ() - this.zOld;
+		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
+		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
+			this.swinging = true;
+			this.lastSwing = level().getGameTime();
+		}
+		if (this.swinging && this.lastSwing + 7L <= level().getGameTime()) {
+			this.swinging = false;
+		}
+		if ((this.swinging || this.entityData.get(SHOOT)) && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+			event.getController().forceAnimationReset();
+			return event.setAndContinue(RawAnimation.begin().thenPlay("attack"));
+		}
+		return PlayState.CONTINUE;
 	}
 
 	String prevAnim = "empty";
@@ -369,6 +433,7 @@ public class PuckEntity extends Monster implements RangedAttackMob, GeoEntity {
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
 		data.add(new AnimationController<>(this, "movement", 4, this::movementPredicate));
+		data.add(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
 		data.add(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
 	}
 

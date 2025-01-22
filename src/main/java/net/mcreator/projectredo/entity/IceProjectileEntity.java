@@ -7,11 +7,13 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.RandomSource;
@@ -20,6 +22,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.projectredo.procedures.IceProjectileProjectileHitsPlayerProcedure;
+import net.mcreator.projectredo.procedures.IceProjectileProjectileHitsLivingEntityProcedure;
 import net.mcreator.projectredo.procedures.IceProjectileProjectileHitsBlockProcedure;
 import net.mcreator.projectredo.init.ProjectRedoModItems;
 import net.mcreator.projectredo.init.ProjectRedoModEntities;
@@ -67,6 +71,18 @@ public class IceProjectileEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
+	public void playerTouch(Player entity) {
+		super.playerTouch(entity);
+		IceProjectileProjectileHitsPlayerProcedure.execute(entity);
+	}
+
+	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		IceProjectileProjectileHitsLivingEntityProcedure.execute(entityHitResult.getEntity());
+	}
+
+	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
 		IceProjectileProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
@@ -91,7 +107,7 @@ public class IceProjectileEntity extends AbstractArrow implements ItemSupplier {
 		IceProjectileEntity entityarrow = new IceProjectileEntity(ProjectRedoModEntities.ICE_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -108,7 +124,7 @@ public class IceProjectileEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(1);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
 		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;

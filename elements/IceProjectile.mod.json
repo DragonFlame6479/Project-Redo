@@ -5,7 +5,7 @@
     "projectileItem": {
       "value": "CUSTOM:PuckGlintstone"
     },
-    "showParticles": true,
+    "showParticles": false,
     "actionSound": {
       "value": "block.glass.break"
     },
@@ -13,12 +13,18 @@
     "power": 1.5,
     "damage": 5.0,
     "knockback": 1,
-    "entityModel": "Default",
-    "customModelTexture": "",
+    "entityModel": "ModelIceProjectile1_Converted_Converted",
+    "customModelTexture": "icecrystal1.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
     "onHitsBlock": {
       "name": "IceProjectileProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "IceProjectileProjectileHitsPlayer"
+    },
+    "onHitsEntity": {
+      "name": "IceProjectileProjectileHitsLivingEntity"
     }
   }
 }

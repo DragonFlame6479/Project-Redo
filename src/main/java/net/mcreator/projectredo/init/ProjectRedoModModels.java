@@ -9,12 +9,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.projectredo.client.model.ModelIceProjectile1_Converted_Converted;
 import net.mcreator.projectredo.client.model.ModelGreatRabbit;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class ProjectRedoModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(ModelIceProjectile1_Converted_Converted.LAYER_LOCATION, ModelIceProjectile1_Converted_Converted::createBodyLayer);
 		event.registerLayerDefinition(ModelGreatRabbit.LAYER_LOCATION, ModelGreatRabbit::createBodyLayer);
 	}
 }
