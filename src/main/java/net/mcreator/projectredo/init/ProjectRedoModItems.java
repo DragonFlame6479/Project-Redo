@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.mcreator.projectredo.item.WitchsWillItem;
 import net.mcreator.projectredo.item.WitchCultDaggerItem;
 import net.mcreator.projectredo.item.TheaterDItem;
+import net.mcreator.projectredo.item.TamedPuckGlintstoneItem;
 import net.mcreator.projectredo.item.TaktOfHeroesItem;
 import net.mcreator.projectredo.item.StraightBetItem;
 import net.mcreator.projectredo.item.RondoOfLoveAndDarknessItem;
@@ -43,6 +44,7 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> WITCHS_WILL = REGISTRY.register("witchs_will", () -> new WitchsWillItem());
 	public static final RegistryObject<Item> JUST_SOME_ITEM = REGISTRY.register("just_some_item", () -> new JustSomeItemItem());
 	public static final RegistryObject<Item> BORGER = REGISTRY.register("borger", () -> new BORGERItem());
+	public static final RegistryObject<Item> TAMED_PUCK_GLINTSTONE = REGISTRY.register("tamed_puck_glintstone", () -> new TamedPuckGlintstoneItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

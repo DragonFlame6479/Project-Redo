@@ -7,14 +7,10 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Puck Glintstone",
+    "name": "Tamed Puck Glintstone",
     "rarity": "EPIC",
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:ProjectRedo"
-      }
-    ],
-    "stackSize": 1,
+    "creativeTabs": [],
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -30,12 +26,11 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "right click a puck with this to tame him!",
-        "right click your tamed puck with this to change it into a tamed puck glintstone!"
+        "there's a puck in here"
       ]
     },
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

@@ -48,8 +48,8 @@
       "registry_name": "puck_glintstone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/project_redo/models/item/puck_glintstone.json",
-          "src/main/java/net/mcreator/projectredo/item/PuckGlintstoneItem.java"
+          "src/main/java/net/mcreator/projectredo/item/PuckGlintstoneItem.java",
+          "src/main/resources/assets/project_redo/models/item/puck_glintstone.json"
         ]
       },
       "path": "~/Items"
@@ -293,13 +293,13 @@
       "registry_name": "puck",
       "metadata": {
         "files": [
-          "src/main/resources/assets/project_redo/models/item/puck_spawn_egg.json",
-          "src/main/java/net/mcreator/projectredo/entity/PuckEntity.java",
           "src/main/java/net/mcreator/projectredo/client/renderer/PuckRenderer.java",
-          "src/main/java/net/mcreator/projectredo/entity/model/PuckModel.java"
+          "src/main/java/net/mcreator/projectredo/entity/PuckEntity.java",
+          "src/main/java/net/mcreator/projectredo/entity/model/PuckModel.java",
+          "src/main/resources/assets/project_redo/models/item/puck_spawn_egg.json"
         ]
       },
-      "path": "~/Entities"
+      "path": "~/Entities/puck n stuff"
     },
     {
       "name": "ReZero",
@@ -675,6 +675,43 @@
         ]
       },
       "path": "~/IceProjectile"
+    },
+    {
+      "name": "WhenRightClickPuckWithStone",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_right_click_puck_with_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/procedures/WhenRightClickPuckWithStoneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/puck n stuff"
+    },
+    {
+      "name": "TamedPuckGlintstone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tamed_puck_glintstone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/item/TamedPuckGlintstoneItem.java",
+          "src/main/resources/assets/project_redo/models/item/tamed_puck_glintstone.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -846,6 +883,7 @@
       "subtitles.rondoofloveanddarkness": "",
       "advancements.a_rabbit_that_wouldnt_end.title": "A Rabbit That Wouldn\u0027t End",
       "biome.project_redo.elior_forest": "Elior Forest",
+      "item.project_redo.tamed_puck_glintstone": "Tamed Puck Glintstone",
       "item.project_redo.puck_spawn_egg": "Puck Spawn Egg",
       "subtitles.fantasylied": "",
       "item.project_redo.gospel": "Gospel",
@@ -869,7 +907,12 @@
       },
       {
         "name": "Entities",
-        "children": []
+        "children": [
+          {
+            "name": "puck n stuff",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Advancements",
