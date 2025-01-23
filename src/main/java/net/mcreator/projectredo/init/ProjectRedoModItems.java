@@ -45,6 +45,7 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> JUST_SOME_ITEM = REGISTRY.register("just_some_item", () -> new JustSomeItemItem());
 	public static final RegistryObject<Item> BORGER = REGISTRY.register("borger", () -> new BORGERItem());
 	public static final RegistryObject<Item> TAMED_PUCK_GLINTSTONE = REGISTRY.register("tamed_puck_glintstone", () -> new TamedPuckGlintstoneItem());
+	public static final RegistryObject<Item> BEATRICE_SPAWN_EGG = REGISTRY.register("beatrice_spawn_egg", () -> new ForgeSpawnEggItem(ProjectRedoModEntities.BEATRICE, -3786391, -5150, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }

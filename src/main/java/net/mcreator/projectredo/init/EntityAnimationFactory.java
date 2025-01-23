@@ -6,6 +6,7 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.projectredo.entity.PuckEntity;
 import net.mcreator.projectredo.entity.GreatRabbitAnimatedEntity;
+import net.mcreator.projectredo.entity.BeatriceEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -20,6 +21,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof PuckEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BeatriceEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
