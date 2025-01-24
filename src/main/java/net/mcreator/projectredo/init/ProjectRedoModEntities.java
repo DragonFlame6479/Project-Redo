@@ -19,6 +19,7 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.projectredo.entity.PuckEntity;
 import net.mcreator.projectredo.entity.IceProjectileEntity;
 import net.mcreator.projectredo.entity.GreatRabbitAnimatedEntity;
+import net.mcreator.projectredo.entity.BeatriceEntity;
 import net.mcreator.projectredo.ProjectRedoMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -32,6 +33,10 @@ public class ProjectRedoModEntities {
 			EntityType.Builder.<PuckEntity>of(PuckEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuckEntity::new).fireImmune().sized(0.4f, 0.4f));
 	public static final RegistryObject<EntityType<IceProjectileEntity>> ICE_PROJECTILE = register("ice_projectile",
 			EntityType.Builder.<IceProjectileEntity>of(IceProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(IceProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BeatriceEntity>> BEATRICE = register("beatrice",
+			EntityType.Builder.<BeatriceEntity>of(BeatriceEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BeatriceEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -42,6 +47,7 @@ public class ProjectRedoModEntities {
 		event.enqueueWork(() -> {
 			GreatRabbitAnimatedEntity.init();
 			PuckEntity.init();
+			BeatriceEntity.init();
 		});
 	}
 
@@ -49,5 +55,6 @@ public class ProjectRedoModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(GREAT_RABBIT_ANIMATED.get(), GreatRabbitAnimatedEntity.createAttributes().build());
 		event.put(PUCK.get(), PuckEntity.createAttributes().build());
+		event.put(BEATRICE.get(), BeatriceEntity.createAttributes().build());
 	}
 }

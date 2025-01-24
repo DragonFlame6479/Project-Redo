@@ -125,7 +125,8 @@ public class PuckEntity extends TamableAnimal implements RangedAttackMob, GeoEnt
 		this.targetSelector.addGoal(1, new OwnerHurtTargetGoal(this));
 		this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = PuckEntity.this.getRandom();
@@ -135,7 +136,7 @@ public class PuckEntity extends TamableAnimal implements RangedAttackMob, GeoEnt
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.goalSelector.addGoal(5, new Goal() {
+		this.goalSelector.addGoal(6, new Goal() {
 			{
 				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
 			}
@@ -174,9 +175,9 @@ public class PuckEntity extends TamableAnimal implements RangedAttackMob, GeoEnt
 				}
 			}
 		});
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(8, new FloatGoal(this));
+		this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(9, new FloatGoal(this));
 		this.goalSelector.addGoal(1, new PuckEntity.RangedAttackGoal(this, 1.25, 1, 64f) {
 			@Override
 			public boolean canContinueToUse() {
