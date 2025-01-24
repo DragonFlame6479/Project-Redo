@@ -2,13 +2,13 @@
   "_fv": 69,
   "_type": "tool",
   "definition": {
-    "toolType": "Sword",
-    "renderType": 0,
+    "toolType": "Special",
+    "renderType": 1,
     "blockingRenderType": 0,
-    "texture": "witchcultdagger",
-    "customModelName": "Normal",
+    "texture": "mimi_staff_-_converted_-_converted",
+    "customModelName": "mimi_staff_-_converted:default",
     "blockingModelName": "Normal blocking",
-    "name": "Witch Cult Dagger",
+    "name": "Mimi Staff",
     "specialInformation": {
       "fixedValue": []
     },
@@ -21,16 +21,16 @@
       }
     ],
     "efficiency": 4.0,
-    "attackSpeed": 0.5,
+    "attackSpeed": 1.0,
     "enchantability": 2,
-    "damageVsEntity": 7.0,
+    "damageVsEntity": 5.5,
     "usageCount": 1000,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [],
     "immuneToFire": false,
-    "blockDropsTier": "STONE",
+    "blockDropsTier": "WOOD",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false

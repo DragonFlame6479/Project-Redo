@@ -21,6 +21,7 @@ import net.mcreator.projectredo.item.RondoOfLoveAndDarknessItem;
 import net.mcreator.projectredo.item.RequiemOfSilenceItem;
 import net.mcreator.projectredo.item.RabbitIconItem;
 import net.mcreator.projectredo.item.PuckGlintstoneItem;
+import net.mcreator.projectredo.item.MimiStaffItem;
 import net.mcreator.projectredo.item.JustSomeItemItem;
 import net.mcreator.projectredo.item.GospelItem;
 import net.mcreator.projectredo.item.CoverAdv1Item;
@@ -46,6 +47,7 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> BORGER = REGISTRY.register("borger", () -> new BORGERItem());
 	public static final RegistryObject<Item> TAMED_PUCK_GLINTSTONE = REGISTRY.register("tamed_puck_glintstone", () -> new TamedPuckGlintstoneItem());
 	public static final RegistryObject<Item> BEATRICE_SPAWN_EGG = REGISTRY.register("beatrice_spawn_egg", () -> new ForgeSpawnEggItem(ProjectRedoModEntities.BEATRICE, -3786391, -5150, new Item.Properties()));
+	public static final RegistryObject<Item> MIMI_STAFF = REGISTRY.register("mimi_staff", () -> new MimiStaffItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

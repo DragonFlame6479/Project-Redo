@@ -10,7 +10,7 @@ public class WitchCultDaggerItem extends SwordItem {
 	public WitchCultDaggerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 1000;
 			}
 
 			public float getSpeed() {
@@ -32,6 +32,6 @@ public class WitchCultDaggerItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -3f, new Item.Properties());
+		}, 3, -3.5f, new Item.Properties());
 	}
 }

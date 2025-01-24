@@ -35,6 +35,7 @@ public class ProjectRedoModTabs {
 				tabData.accept(ProjectRedoModItems.WITCHS_WILL.get());
 				tabData.accept(ProjectRedoModItems.PUCK_SPAWN_EGG.get());
 				tabData.accept(ProjectRedoModItems.BEATRICE_SPAWN_EGG.get());
+				tabData.accept(ProjectRedoModItems.MIMI_STAFF.get());
 			})
 
 					.build());
@@ -44,6 +45,7 @@ public class ProjectRedoModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
 			tabData.accept(ProjectRedoModItems.WITCH_CULT_DAGGER.get());
+			tabData.accept(ProjectRedoModItems.MIMI_STAFF.get());
 
 		}
 	}

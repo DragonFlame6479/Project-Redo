@@ -1,0 +1,7 @@
+{
+  "parent": "project_redo:custom/mimi_staff_-_converted",
+  "textures": {
+    "0": "project_redo:block/mimistafftexture",
+    "particle": "project_redo:item/mimi_staff_-_converted_-_converted"
+  }
+}

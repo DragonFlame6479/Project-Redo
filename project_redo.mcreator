@@ -728,6 +728,30 @@
         ]
       },
       "path": "~/Entities"
+    },
+    {
+      "name": "Borgerpaint",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "borgerpaint",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MimiStaff",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimi_staff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/projectredo/item/MimiStaffItem.java",
+          "src/main/resources/assets/project_redo/models/item/mimi_staff.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -822,6 +846,9 @@
     }
   ],
   "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:MimiStaff"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:WitchCultDagger"
     ],
@@ -853,18 +880,19 @@
       "PuckGlintstone",
       "WitchsWill",
       "Puck",
-      "Beatrice"
+      "Beatrice",
+      "MimiStaff"
     ]
   },
   "language_map": {
     "en_us": {
       "item.project_redo.borger": "BORGER",
-      "item.project_redo.theater_d.desc": "Myth \u0026 Roid - Theater D",
       "effect.project_redo.frost": "Frost",
+      "item.project_redo.theater_d.desc": "Myth \u0026 Roid - Theater D",
       "biome.project_redo.forest": "Forest",
       "item.project_redo.puck_glintstone": "Puck Glintstone",
-      "item.project_redo.rabbit_icon": "Rabbit Icon",
       "item.project_redo.beatrice_spawn_egg": "Beatrice Spawn Egg",
+      "item.project_redo.rabbit_icon": "Rabbit Icon",
       "subtitles.callofthewitch": "oooeeeoooo",
       "advancements.obtained_gospel_adv.descr": "You\u0027ve obtained the Witch Cult\u0027s gospel... but what are you going to do with that?",
       "subtitles.touchingyou": "",
@@ -876,6 +904,7 @@
       "item.project_redo.requiem_of_silence.desc": "Re:Zero Ost - Requiem Of Silence",
       "advancements.project_redo_adv.descr": "Starting Minecraft From Zero",
       "item.project_redo.just_some_item": "Just Some Item",
+      "item.project_redo.mimi_staff": "Mimi Staff",
       "advancements.obtained_gospel_adv.title": "Proof of LOVE",
       "entity.project_redo.beatrice": "Beatrice",
       "subtitles.rondoofloveanddarkness": "",
@@ -889,9 +918,11 @@
       "subtitles.straightbet": "",
       "item.project_redo.rondo_of_love_and_darkness.desc": "ReZero Ost - Rondo Of Love And Darkness",
       "subtitles.taktofheroesmusic": "",
+      "painting.project_redo.borgerpaint.title": "Borgerpaint",
       "item.project_redo.witchs_will": "Witch\u0027s Will",
       "entity.project_redo.great_rabbit_animated": "The Great Rabbit",
       "item.project_redo.cover_adv_1": "Cover Adv 1",
+      "painting.project_redo.borgerpaint.author": "DragonFlame",
       "item.project_redo.witch_cult_dagger": "Witch Cult Dagger",
       "subtitles.echidnasteaparty": "",
       "item.project_redo.takt_of_heroes": "Music Disk",

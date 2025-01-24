@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.projectredo.init.ProjectRedoModTabs;
 import net.mcreator.projectredo.init.ProjectRedoModSounds;
 import net.mcreator.projectredo.init.ProjectRedoModParticleTypes;
+import net.mcreator.projectredo.init.ProjectRedoModPaintings;
 import net.mcreator.projectredo.init.ProjectRedoModMobEffects;
 import net.mcreator.projectredo.init.ProjectRedoModMenus;
 import net.mcreator.projectredo.init.ProjectRedoModItems;
@@ -53,6 +54,7 @@ public class ProjectRedoMod {
 
 		ProjectRedoModMobEffects.REGISTRY.register(bus);
 
+		ProjectRedoModPaintings.REGISTRY.register(bus);
 		ProjectRedoModParticleTypes.REGISTRY.register(bus);
 
 		ProjectRedoModMenus.REGISTRY.register(bus);
