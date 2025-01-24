@@ -10,7 +10,7 @@
     "name": "Tamed Puck Glintstone",
     "rarity": "EPIC",
     "creativeTabs": [],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -30,7 +30,7 @@
       ]
     },
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
