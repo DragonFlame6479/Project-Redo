@@ -32,6 +32,6 @@ public class WitchCultDaggerItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -3.5f, new Item.Properties());
+		}, 3, -2f, new Item.Properties());
 	}
 }

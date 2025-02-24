@@ -4,6 +4,9 @@
   "definition": {
     "triggerKey": "M",
     "keyBindingName": "Magic Gui Key",
-    "keyBindingCategoryKey": "ui"
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "MagicGuiKeyOnKeyPressed"
+    }
   }
 }

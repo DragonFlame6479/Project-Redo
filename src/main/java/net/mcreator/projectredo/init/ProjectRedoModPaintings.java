@@ -14,5 +14,5 @@ import net.mcreator.projectredo.ProjectRedoMod;
 
 public class ProjectRedoModPaintings {
 	public static final DeferredRegister<PaintingVariant> REGISTRY = DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, ProjectRedoMod.MODID);
-	public static final RegistryObject<PaintingVariant> BORGERPAINT = REGISTRY.register("borgerpaint", () -> new PaintingVariant(48, 64));
+	public static final RegistryObject<PaintingVariant> BORGERPAINT = REGISTRY.register("borgerpaint", () -> new PaintingVariant(64, 48));
 }

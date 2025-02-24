@@ -3,8 +3,8 @@
   "_type": "painting",
   "definition": {
     "texture": "borgeryay",
-    "width": 48,
-    "height": 64,
+    "width": 64,
+    "height": 48,
     "title": "Borgerpaint",
     "author": "DragonFlame"
   }

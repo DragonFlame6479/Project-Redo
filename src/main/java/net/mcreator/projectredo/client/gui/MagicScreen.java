@@ -27,8 +27,8 @@ public class MagicScreen extends AbstractContainerScreen<MagicMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 300;
-		this.imageHeight = 180;
+		this.imageWidth = 200;
+		this.imageHeight = 190;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("project_redo:textures/screens/magic.png");
@@ -46,6 +46,9 @@ public class MagicScreen extends AbstractContainerScreen<MagicMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("project_redo:textures/screens/borger.png"), this.leftPos + -23, this.topPos + -34, 0, 0, 260, 260, 260, 260);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -60,6 +63,7 @@ public class MagicScreen extends AbstractContainerScreen<MagicMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.project_redo.magic.label_wip"), -113, -25, -12829636, false);
 	}
 
 	@Override
