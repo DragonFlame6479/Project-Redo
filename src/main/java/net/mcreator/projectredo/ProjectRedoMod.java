@@ -25,6 +25,7 @@ import net.mcreator.projectredo.init.ProjectRedoModMobEffects;
 import net.mcreator.projectredo.init.ProjectRedoModMenus;
 import net.mcreator.projectredo.init.ProjectRedoModItems;
 import net.mcreator.projectredo.init.ProjectRedoModEntities;
+import net.mcreator.projectredo.init.ProjectRedoModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -46,6 +47,7 @@ public class ProjectRedoMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ProjectRedoModSounds.REGISTRY.register(bus);
+		ProjectRedoModBlocks.REGISTRY.register(bus);
 
 		ProjectRedoModItems.REGISTRY.register(bus);
 		ProjectRedoModEntities.REGISTRY.register(bus);

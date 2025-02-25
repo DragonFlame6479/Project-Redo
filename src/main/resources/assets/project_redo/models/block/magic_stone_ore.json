@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project_redo:block/magistoneore",
+    "up": "project_redo:block/magistoneore",
+    "north": "project_redo:block/magistoneore",
+    "east": "project_redo:block/magistoneore",
+    "south": "project_redo:block/magistoneore",
+    "west": "project_redo:block/magistoneore",
+    "particle": "project_redo:block/magistoneore"
+  },
+  "render_type": "solid"
+}

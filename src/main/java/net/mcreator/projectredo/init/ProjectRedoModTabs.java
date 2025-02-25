@@ -36,6 +36,8 @@ public class ProjectRedoModTabs {
 				tabData.accept(ProjectRedoModItems.PUCK_SPAWN_EGG.get());
 				tabData.accept(ProjectRedoModItems.BEATRICE_SPAWN_EGG.get());
 				tabData.accept(ProjectRedoModItems.MIMI_STAFF.get());
+				tabData.accept(ProjectRedoModBlocks.MAGIC_STONE_ORE.get().asItem());
+				tabData.accept(ProjectRedoModItems.NEUTRAL_MAGIC_STONE.get());
 			})
 
 					.build());

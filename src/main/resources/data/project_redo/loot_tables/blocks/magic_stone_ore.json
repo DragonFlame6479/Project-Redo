@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "project_redo:blocks/magic_stone_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "project_redo:neutral_magic_stone"
+        }
+      ]
+    }
+  ]
+}

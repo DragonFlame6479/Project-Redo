@@ -48,8 +48,8 @@
       "registry_name": "puck_glintstone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/projectredo/item/PuckGlintstoneItem.java",
-          "src/main/resources/assets/project_redo/models/item/puck_glintstone.json"
+          "src/main/resources/assets/project_redo/models/item/puck_glintstone.json",
+          "src/main/java/net/mcreator/projectredo/item/PuckGlintstoneItem.java"
         ]
       },
       "path": "~/Items"
@@ -713,8 +713,8 @@
       "registry_name": "tamed_puck_glintstone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/projectredo/item/TamedPuckGlintstoneItem.java",
-          "src/main/resources/assets/project_redo/models/item/tamed_puck_glintstone.json"
+          "src/main/resources/assets/project_redo/models/item/tamed_puck_glintstone.json",
+          "src/main/java/net/mcreator/projectredo/item/TamedPuckGlintstoneItem.java"
         ]
       },
       "path": "~/Items"
@@ -819,6 +819,54 @@
         ]
       },
       "path": "~/Magic"
+    },
+    {
+      "name": "MagicStoneOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_stone_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/magic_stone_ore.json",
+          "src/main/resources/data/project_redo/forge/biome_modifier/magic_stone_ore_biome_modifier.json",
+          "src/main/resources/data/project_redo/worldgen/configured_feature/magic_stone_ore.json",
+          "src/main/resources/data/project_redo/loot_tables/blocks/magic_stone_ore.json",
+          "src/main/resources/assets/project_redo/models/block/magic_stone_ore.json",
+          "src/main/java/net/mcreator/projectredo/block/MagicStoneOreBlock.java",
+          "src/main/resources/data/project_redo/worldgen/placed_feature/magic_stone_ore.json",
+          "src/main/resources/assets/project_redo/blockstates/magic_stone_ore.json"
+        ]
+      },
+      "path": "~/MagicStones"
+    },
+    {
+      "name": "MagicStone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neutral_magic_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/neutral_magic_stone.json",
+          "src/main/java/net/mcreator/projectredo/item/MagicStoneItem.java"
+        ]
+      },
+      "path": "~/MagicStones"
+    },
+    {
+      "name": "Refinedmagicstone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refinedmagicstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/refinedmagicstone.json",
+          "src/main/java/net/mcreator/projectredo/item/RefinedmagicstoneItem.java"
+        ]
+      },
+      "path": "~/MagicStones"
     }
   ],
   "variable_elements": [],
@@ -913,6 +961,12 @@
     }
   ],
   "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:MagicStoneOre"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MagicStoneOre"
+    ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:MimiStaff"
     ],
@@ -927,11 +981,11 @@
       "~CUSTOM:TaktOfHeroes"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.DIRT#0",
-      "~Blocks.GRASS",
       "~Blocks.BEDROCK",
       "~Blocks.MOSS_BLOCK",
-      "~Blocks.STONE#0"
+      "~Blocks.STONE#0",
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS"
     ]
   },
   "tab_element_order": {
@@ -948,7 +1002,9 @@
       "WitchsWill",
       "Puck",
       "Beatrice",
-      "MimiStaff"
+      "MimiStaff",
+      "MagicStoneOre",
+      "MagicStone"
     ]
   },
   "language_map": {
@@ -964,6 +1020,7 @@
       "advancements.obtained_gospel_adv.descr": "You\u0027ve obtained the Witch Cult\u0027s gospel... but what are you going to do with that?",
       "subtitles.touchingyou": "",
       "item.project_redo.requiem_of_silence": "Music Disk",
+      "item.project_redo.neutral_magic_stone": "Neutral Magic Stone",
       "item_group.project_redo.project_redo": "Project Redo",
       "subtitles.theaterd": "",
       "advancements.project_redo_adv.title": "Project Redo",
@@ -981,6 +1038,7 @@
       "item.project_redo.tamed_puck_glintstone": "Tamed Puck Glintstone",
       "item.project_redo.puck_spawn_egg": "Puck Spawn Egg",
       "subtitles.fantasylied": "",
+      "item.project_redo.refinedmagicstone": "Refinedmagicstone",
       "gui.project_redo.magic_overlay.label_wip": "WIP",
       "item.project_redo.straight_bet": "Music Disk",
       "subtitles.requiemofsilence": "",
@@ -991,6 +1049,7 @@
       "item.project_redo.witchs_will": "Witch\u0027s Will",
       "entity.project_redo.great_rabbit_animated": "The Great Rabbit",
       "item.project_redo.cover_adv_1": "Cover Adv 1",
+      "block.project_redo.magic_stone_ore": "Magic Stone Ore",
       "painting.project_redo.borgerpaint.author": "DragonFlame",
       "item.project_redo.witch_cult_dagger": "Witch Cult Dagger",
       "subtitles.echidnasteaparty": "",
@@ -1095,6 +1154,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "MagicStones",
+        "children": []
       }
     ]
   },

@@ -9,7 +9,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.projectredo.item.WitchsWillItem;
 import net.mcreator.projectredo.item.WitchCultDaggerItem;
@@ -19,9 +21,11 @@ import net.mcreator.projectredo.item.TaktOfHeroesItem;
 import net.mcreator.projectredo.item.StraightBetItem;
 import net.mcreator.projectredo.item.RondoOfLoveAndDarknessItem;
 import net.mcreator.projectredo.item.RequiemOfSilenceItem;
+import net.mcreator.projectredo.item.RefinedmagicstoneItem;
 import net.mcreator.projectredo.item.RabbitIconItem;
 import net.mcreator.projectredo.item.PuckGlintstoneItem;
 import net.mcreator.projectredo.item.MimiStaffItem;
+import net.mcreator.projectredo.item.MagicStoneItem;
 import net.mcreator.projectredo.item.JustSomeItemItem;
 import net.mcreator.projectredo.item.GospelItem;
 import net.mcreator.projectredo.item.CoverAdv1Item;
@@ -48,6 +52,13 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> TAMED_PUCK_GLINTSTONE = REGISTRY.register("tamed_puck_glintstone", () -> new TamedPuckGlintstoneItem());
 	public static final RegistryObject<Item> BEATRICE_SPAWN_EGG = REGISTRY.register("beatrice_spawn_egg", () -> new ForgeSpawnEggItem(ProjectRedoModEntities.BEATRICE, -3786391, -5150, new Item.Properties()));
 	public static final RegistryObject<Item> MIMI_STAFF = REGISTRY.register("mimi_staff", () -> new MimiStaffItem());
+	public static final RegistryObject<Item> MAGIC_STONE_ORE = block(ProjectRedoModBlocks.MAGIC_STONE_ORE);
+	public static final RegistryObject<Item> NEUTRAL_MAGIC_STONE = REGISTRY.register("neutral_magic_stone", () -> new MagicStoneItem());
+	public static final RegistryObject<Item> REFINEDMAGICSTONE = REGISTRY.register("refinedmagicstone", () -> new RefinedmagicstoneItem());
+
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
 }
