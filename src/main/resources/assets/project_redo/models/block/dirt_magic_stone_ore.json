@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project_redo:block/dirtmagicstone",
+    "up": "project_redo:block/dirtmagicstone",
+    "north": "project_redo:block/dirtmagicstone",
+    "east": "project_redo:block/dirtmagicstone",
+    "south": "project_redo:block/dirtmagicstone",
+    "west": "project_redo:block/dirtmagicstone",
+    "particle": "project_redo:block/dirtmagicstone"
+  },
+  "render_type": "solid"
+}

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "refinedmagicstone",
+    "texture": "magicstonenugget",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Refined Magic Stone",
+    "name": "Magic Stone Nugget",
     "rarity": "UNCOMMON",
     "creativeTabs": [
       {

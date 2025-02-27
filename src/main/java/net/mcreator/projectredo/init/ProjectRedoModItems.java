@@ -25,6 +25,7 @@ import net.mcreator.projectredo.item.RefinedmagicstoneItem;
 import net.mcreator.projectredo.item.RabbitIconItem;
 import net.mcreator.projectredo.item.PuckGlintstoneItem;
 import net.mcreator.projectredo.item.MimiStaffItem;
+import net.mcreator.projectredo.item.MagicStoneNuggetItem;
 import net.mcreator.projectredo.item.MagicStoneItem;
 import net.mcreator.projectredo.item.JustSomeItemItem;
 import net.mcreator.projectredo.item.GospelItem;
@@ -55,6 +56,8 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> MAGIC_STONE_ORE = block(ProjectRedoModBlocks.MAGIC_STONE_ORE);
 	public static final RegistryObject<Item> NEUTRAL_MAGIC_STONE = REGISTRY.register("neutral_magic_stone", () -> new MagicStoneItem());
 	public static final RegistryObject<Item> REFINEDMAGICSTONE = REGISTRY.register("refinedmagicstone", () -> new RefinedmagicstoneItem());
+	public static final RegistryObject<Item> DIRT_MAGIC_STONE_ORE = block(ProjectRedoModBlocks.DIRT_MAGIC_STONE_ORE);
+	public static final RegistryObject<Item> MAGIC_STONE_NUGGET = REGISTRY.register("magic_stone_nugget", () -> new MagicStoneNuggetItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -38,6 +38,9 @@ public class ProjectRedoModTabs {
 				tabData.accept(ProjectRedoModItems.MIMI_STAFF.get());
 				tabData.accept(ProjectRedoModBlocks.MAGIC_STONE_ORE.get().asItem());
 				tabData.accept(ProjectRedoModItems.NEUTRAL_MAGIC_STONE.get());
+				tabData.accept(ProjectRedoModItems.REFINEDMAGICSTONE.get());
+				tabData.accept(ProjectRedoModItems.MAGIC_STONE_NUGGET.get());
+				tabData.accept(ProjectRedoModBlocks.DIRT_MAGIC_STONE_ORE.get().asItem());
 			})
 
 					.build());

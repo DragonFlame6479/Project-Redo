@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "project_redo:dirt_magic_stone_ore",
+  "step": "underground_ores"
+}

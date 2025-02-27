@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "project_redo:magic_stone_nugget"
+    }
+  },
+  "result": {
+    "item": "project_redo:neutral_magic_stone",
+    "count": 1
+  }
+}

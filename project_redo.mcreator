@@ -52,7 +52,7 @@
           "src/main/java/net/mcreator/projectredo/item/PuckGlintstoneItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/MiscItems"
     },
     {
       "name": "GreatRabbitAttackControl",
@@ -162,7 +162,7 @@
           "src/main/resources/assets/project_redo/models/item/gospel.json"
         ]
       },
-      "path": "~/Items"
+      "path": "~/MiscItems"
     },
     {
       "name": "ObtainedGospelAdv",
@@ -257,7 +257,7 @@
           "src/main/resources/assets/project_redo/models/item/witch_cult_dagger.json"
         ]
       },
-      "path": "~/Items"
+      "path": "~/MiscItems"
     },
     {
       "name": "StraightBet",
@@ -468,7 +468,7 @@
           "src/main/resources/assets/project_redo/models/item/witchs_will.json"
         ]
       },
-      "path": "~/Items"
+      "path": "~/MiscItems"
     },
     {
       "name": "IsekaiCode",
@@ -717,7 +717,7 @@
           "src/main/java/net/mcreator/projectredo/item/TamedPuckGlintstoneItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/MiscItems"
     },
     {
       "name": "Beatrice",
@@ -757,7 +757,7 @@
           "src/main/resources/assets/project_redo/models/item/mimi_staff.json"
         ]
       },
-      "path": "~/Items"
+      "path": "~/MiscItems"
     },
     {
       "name": "MagicOverlay",
@@ -867,6 +867,53 @@
         ]
       },
       "path": "~/MagicStones"
+    },
+    {
+      "name": "DirtMagicStoneOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_magic_stone_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/worldgen/configured_feature/dirt_magic_stone_ore.json",
+          "src/main/resources/data/project_redo/worldgen/placed_feature/dirt_magic_stone_ore.json",
+          "src/main/resources/assets/project_redo/blockstates/dirt_magic_stone_ore.json",
+          "src/main/resources/data/project_redo/loot_tables/blocks/dirt_magic_stone_ore.json",
+          "src/main/resources/assets/project_redo/models/item/dirt_magic_stone_ore.json",
+          "src/main/resources/assets/project_redo/models/block/dirt_magic_stone_ore.json",
+          "src/main/resources/data/project_redo/forge/biome_modifier/dirt_magic_stone_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/projectredo/block/DirtMagicStoneOreBlock.java"
+        ]
+      },
+      "path": "~/MagicStones"
+    },
+    {
+      "name": "MagicStoneNugget",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_stone_nugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/project_redo/models/item/magic_stone_nugget.json",
+          "src/main/java/net/mcreator/projectredo/item/MagicStoneNuggetItem.java"
+        ]
+      },
+      "path": "~/MagicStones"
+    },
+    {
+      "name": "MagicStoneNuggetToCrystal",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_stone_nugget_to_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/project_redo/recipes/magic_stone_nugget_to_crystal.json"
+        ]
+      },
+      "path": "~/MagicStones"
     }
   ],
   "variable_elements": [],
@@ -970,6 +1017,9 @@
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:MimiStaff"
     ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:DirtMagicStoneOre"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:WitchCultDagger"
     ],
@@ -1004,7 +1054,10 @@
       "Beatrice",
       "MimiStaff",
       "MagicStoneOre",
-      "MagicStone"
+      "MagicStone",
+      "Refinedmagicstone",
+      "MagicStoneNugget",
+      "DirtMagicStoneOre"
     ]
   },
   "language_map": {
@@ -1038,10 +1091,11 @@
       "item.project_redo.tamed_puck_glintstone": "Tamed Puck Glintstone",
       "item.project_redo.puck_spawn_egg": "Puck Spawn Egg",
       "subtitles.fantasylied": "",
-      "item.project_redo.refinedmagicstone": "Refinedmagicstone",
+      "item.project_redo.refinedmagicstone": "Refined Magic Stone",
       "gui.project_redo.magic_overlay.label_wip": "WIP",
       "item.project_redo.straight_bet": "Music Disk",
       "subtitles.requiemofsilence": "",
+      "block.project_redo.dirt_magic_stone_ore": "Dirt Magic Stone Ore",
       "subtitles.straightbet": "",
       "item.project_redo.rondo_of_love_and_darkness.desc": "ReZero Ost - Rondo Of Love And Darkness",
       "subtitles.taktofheroesmusic": "",
@@ -1061,6 +1115,7 @@
       "item.project_redo.rondo_of_love_and_darkness": "Music Disk",
       "key.project_redo.magic_gui_key": "Magic Gui Key",
       "item.project_redo.great_rabbit_animated_spawn_egg": "The Great Rabbit Spawn Egg",
+      "item.project_redo.magic_stone_nugget": "Magic Stone Nugget",
       "subtitles.returnbydeath": "AHHHH",
       "entity.project_redo.puck": "Puck",
       "subtitles.memoriesoftimeandsky": "",
@@ -1073,7 +1128,7 @@
     "name": "~",
     "children": [
       {
-        "name": "Items",
+        "name": "MiscItems",
         "children": []
       },
       {
@@ -1157,6 +1212,10 @@
       },
       {
         "name": "MagicStones",
+        "children": []
+      },
+      {
+        "name": "Woods",
         "children": []
       }
     ]
