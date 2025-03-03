@@ -1011,17 +1011,8 @@
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:MagicStoneOre"
     ],
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:MagicStoneOre"
-    ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:MimiStaff"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:DirtMagicStoneOre"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:WitchCultDagger"
     ],
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:TheaterD",
@@ -1036,6 +1027,15 @@
       "~Blocks.STONE#0",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MagicStoneOre"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:DirtMagicStoneOre"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:WitchCultDagger"
     ]
   },
   "tab_element_order": {
@@ -1194,6 +1194,10 @@
           {
             "name": "Sanctuary",
             "children": []
+          },
+          {
+            "name": "FlugelsTree",
+            "children": []
           }
         ]
       },
@@ -1216,7 +1220,25 @@
       },
       {
         "name": "Woods",
-        "children": []
+        "children": [
+          {
+            "name": "FlugelsTreeWood",
+            "children": []
+          },
+          {
+            "name": "EliorSpruce",
+            "children": [
+              {
+                "name": "FrozenEliorSpruce",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "LifausOak",
+            "children": []
+          }
+        ]
       }
     ]
   },
