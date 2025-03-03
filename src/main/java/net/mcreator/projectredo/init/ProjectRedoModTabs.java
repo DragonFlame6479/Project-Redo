@@ -47,10 +47,26 @@ public class ProjectRedoModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_WOOD.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_LOG.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_PLANKS.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_STAIRS.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_SLAB.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_FENCE.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_FENCE_GATE.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_PRESSURE_PLATE.get().asItem());
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_BUTTON.get().asItem());
+
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
 			tabData.accept(ProjectRedoModItems.WITCH_CULT_DAGGER.get());
 			tabData.accept(ProjectRedoModItems.MIMI_STAFF.get());
+
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+
+			tabData.accept(ProjectRedoModBlocks.LIFAUS_OAK_LEAVES.get().asItem());
 
 		}
 	}

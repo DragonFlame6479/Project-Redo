@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project_redo:block/lfausoaklogtop",
+    "up": "project_redo:block/lfausoaklogtop",
+    "north": "project_redo:block/lfausoaklogside",
+    "east": "project_redo:block/lfausoaklogside",
+    "south": "project_redo:block/lfausoaklogside",
+    "west": "project_redo:block/lfausoaklogside",
+    "particle": "project_redo:block/lfausoaklogtop"
+  },
+  "render_type": "solid"
+}

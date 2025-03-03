@@ -58,6 +58,17 @@ public class ProjectRedoModItems {
 	public static final RegistryObject<Item> REFINEDMAGICSTONE = REGISTRY.register("refinedmagicstone", () -> new RefinedmagicstoneItem());
 	public static final RegistryObject<Item> DIRT_MAGIC_STONE_ORE = block(ProjectRedoModBlocks.DIRT_MAGIC_STONE_ORE);
 	public static final RegistryObject<Item> MAGIC_STONE_NUGGET = REGISTRY.register("magic_stone_nugget", () -> new MagicStoneNuggetItem());
+	public static final RegistryObject<Item> LIFAUS_OAK_WOOD = block(ProjectRedoModBlocks.LIFAUS_OAK_WOOD);
+	public static final RegistryObject<Item> LIFAUS_OAK_LOG = block(ProjectRedoModBlocks.LIFAUS_OAK_LOG);
+	public static final RegistryObject<Item> LIFAUS_OAK_PLANKS = block(ProjectRedoModBlocks.LIFAUS_OAK_PLANKS);
+	public static final RegistryObject<Item> LIFAUS_OAK_LEAVES = block(ProjectRedoModBlocks.LIFAUS_OAK_LEAVES);
+	public static final RegistryObject<Item> LIFAUS_OAK_STAIRS = block(ProjectRedoModBlocks.LIFAUS_OAK_STAIRS);
+	public static final RegistryObject<Item> LIFAUS_OAK_SLAB = block(ProjectRedoModBlocks.LIFAUS_OAK_SLAB);
+	public static final RegistryObject<Item> LIFAUS_OAK_FENCE = block(ProjectRedoModBlocks.LIFAUS_OAK_FENCE);
+	public static final RegistryObject<Item> LIFAUS_OAK_FENCE_GATE = block(ProjectRedoModBlocks.LIFAUS_OAK_FENCE_GATE);
+	public static final RegistryObject<Item> LIFAUS_OAK_PRESSURE_PLATE = block(ProjectRedoModBlocks.LIFAUS_OAK_PRESSURE_PLATE);
+	public static final RegistryObject<Item> LIFAUS_OAK_BUTTON = block(ProjectRedoModBlocks.LIFAUS_OAK_BUTTON);
+	public static final RegistryObject<Item> BLOCK_OF_MAGIC_STONE = block(ProjectRedoModBlocks.BLOCK_OF_MAGIC_STONE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

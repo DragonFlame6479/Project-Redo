@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "project_redo:block/lifaus_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "project_redo:block/lifaus_oak_pressure_plate_down"
+    }
+  }
+}

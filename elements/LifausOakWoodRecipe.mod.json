@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LifausOakLog"
+      },
+      {
+        "value": "CUSTOM:LifausOakLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LifausOakLog"
+      },
+      {
+        "value": "CUSTOM:LifausOakLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LifausOakWood"
+    },
+    "name": "lifaus_oak_wood_recipe",
+    "namespace": "mod"
+  }
+}

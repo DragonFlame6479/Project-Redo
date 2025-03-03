@@ -1,0 +1,8 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "particle": "project_redo:block/lfausoakplank",
+    "texture": "project_redo:block/lfausoakplank"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project_redo:block/blockofmagicstone",
+    "up": "project_redo:block/blockofmagicstone",
+    "north": "project_redo:block/blockofmagicstone",
+    "east": "project_redo:block/blockofmagicstone",
+    "south": "project_redo:block/blockofmagicstone",
+    "west": "project_redo:block/blockofmagicstone",
+    "particle": "project_redo:block/blockofmagicstone"
+  },
+  "render_type": "solid"
+}

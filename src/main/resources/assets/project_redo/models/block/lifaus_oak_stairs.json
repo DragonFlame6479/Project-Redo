@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "project_redo:block/lfausoakplank",
+    "bottom": "project_redo:block/lfausoakplank",
+    "top": "project_redo:block/lfausoakplank",
+    "side": "project_redo:block/lfausoakplank"
+  },
+  "render_type": "solid"
+}
